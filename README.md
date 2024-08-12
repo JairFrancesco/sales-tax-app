@@ -1,13 +1,14 @@
-# Application to calculate tax sales
+# Sales Tax Calculator Application
 
 ## Structure
-The application uses a directory structure with `classes`, `helpers`, and `services` directories for organizing code files.
+The application uses a directory structure with `classes`(Item and Receipt), `helpers`(organize code and to have DRY code), and `services`(Encapsulate business logic) directories for organizing code files.
 The `load_paths.rb` file is located in the root directory of the project and is responsible for requiring all necessary files.
 
-## Instructions to run the app
+## Running the Application
 
-To run this app you must have ruby installed (Ruby 3.1.0 was used for development)
-To run the app execute the following command
+To run the application, ensure Ruby is installed on your system. The application was developed using Ruby 3.1.0.
+
+Run the application:
 ```
 ruby lib/app.rb
 ```
@@ -19,19 +20,21 @@ there are 3 available options
 <li> Load items from file </li>
 </ol>
 
-use the option 2 to quickly test all basic cases
+For quick testing of basic cases, use option 2 (testing inputs).
 
 ## Instruction to run rspec tests
 
 ### Install dependencies
+Before running tests, install the required gems:
 ```
 bundle install
 ```
-Run all the unit tests by running
+To execute all unit tests:
 ```
 bundle exec rspec
 ```
-if you wanna run a specific unit test do the following
+if you wanna run a specific unit test, specify the test file:
 ```
 bundle exec rspec spec/classes/receipt_spec.rb 
 ```
+Replace spec/classes/receipt_spec.rb with the path to the test file you want to run.
