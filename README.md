@@ -2,6 +2,7 @@
 
 ## Structure
 The application uses a directory structure with `classes`(Item and Receipt), `helpers`(organize code and to have DRY code), and `services`(Encapsulate business logic) directories for organizing code files.
+
 The `load_paths.rb` file is located in the root directory of the project and is responsible for requiring all necessary files.
 
 ## Running the Application
