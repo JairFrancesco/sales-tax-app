@@ -26,6 +26,10 @@ For quick testing of basic cases, use option 2 (testing inputs).
 ## Instruction to run rspec tests
 
 ### Install dependencies
+First you need bundler to install dependencies
+```
+gem install bundler
+```
 Before running tests, install the required gems:
 ```
 bundle install
